@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simcpu_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="simcpu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="234.790 ns"></ZoomStartTime>
+      <ZoomEndTime time="357.691 ns"></ZoomEndTime>
+      <Cursor1Time time="265.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="227"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="68" />
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/is_taken_TBSCin" type="logic">
+      <obj_property name="ElementShortName">is_taken_TBSCin</obj_property>
+      <obj_property name="ObjectShortName">is_taken_TBSCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/jmp_signal_TBSCin" type="logic">
+      <obj_property name="ElementShortName">jmp_signal_TBSCin</obj_property>
+      <obj_property name="ObjectShortName">jmp_signal_TBSCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/pc_TBSCin" type="array">
+      <obj_property name="ElementShortName">pc_TBSCin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_TBSCin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/correct_pc_target_TBSCin" type="array">
+      <obj_property name="ElementShortName">correct_pc_target_TBSCin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">correct_pc_target_TBSCin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/pc_branch_TBSCin" type="array">
+      <obj_property name="ElementShortName">pc_branch_TBSCin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_branch_TBSCin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/pc_prediction_TBSCout" type="array">
+      <obj_property name="ElementShortName">pc_prediction_TBSCout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_prediction_TBSCout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/state_table" type="array">
+      <obj_property name="ElementShortName">state_table[0:63][1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_table[0:63][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/target_table" type="array">
+      <obj_property name="ElementShortName">target_table[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">target_table[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/TWO_BIT_SATURATING_COUNT/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/stall_PCin" type="logic">
+      <obj_property name="ElementShortName">stall_PCin</obj_property>
+      <obj_property name="ObjectShortName">stall_PCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/is_branch_ins_PCin" type="logic">
+      <obj_property name="ElementShortName">is_branch_ins_PCin</obj_property>
+      <obj_property name="ObjectShortName">is_branch_ins_PCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/flush_pipeline_PCin" type="logic">
+      <obj_property name="ElementShortName">flush_pipeline_PCin</obj_property>
+      <obj_property name="ObjectShortName">flush_pipeline_PCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/alu_operating_PCin" type="logic">
+      <obj_property name="ElementShortName">alu_operating_PCin</obj_property>
+      <obj_property name="ObjectShortName">alu_operating_PCin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/pc_prediction_PCin" type="array">
+      <obj_property name="ElementShortName">pc_prediction_PCin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_prediction_PCin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/branch_target_PCin" type="array">
+      <obj_property name="ElementShortName">branch_target_PCin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_target_PCin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/pc_IFout" type="array">
+      <obj_property name="ElementShortName">pc_IFout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_IFout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/PC/cur_pc" type="array">
+      <obj_property name="ElementShortName">cur_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/stall_EXEin" type="logic">
+      <obj_property name="ElementShortName">stall_EXEin</obj_property>
+      <obj_property name="ObjectShortName">stall_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rd_EXEin" type="array">
+      <obj_property name="ElementShortName">rd_EXEin[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_EXEin[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_op_EXEin" type="array">
+      <obj_property name="ElementShortName">alu_op_EXEin[9:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op_EXEin[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/mem_size_EXEin" type="array">
+      <obj_property name="ElementShortName">mem_size_EXEin[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_size_EXEin[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_sel_EXEin" type="logic">
+      <obj_property name="ElementShortName">alu_sel_EXEin</obj_property>
+      <obj_property name="ObjectShortName">alu_sel_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/reg_sel_EXEin" type="logic">
+      <obj_property name="ElementShortName">reg_sel_EXEin</obj_property>
+      <obj_property name="ObjectShortName">reg_sel_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/beq_EXEin" type="logic">
+      <obj_property name="ElementShortName">beq_EXEin</obj_property>
+      <obj_property name="ObjectShortName">beq_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/bne_EXEin" type="logic">
+      <obj_property name="ElementShortName">bne_EXEin</obj_property>
+      <obj_property name="ObjectShortName">bne_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/blt_EXEin" type="logic">
+      <obj_property name="ElementShortName">blt_EXEin</obj_property>
+      <obj_property name="ObjectShortName">blt_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/bge_EXEin" type="logic">
+      <obj_property name="ElementShortName">bge_EXEin</obj_property>
+      <obj_property name="ObjectShortName">bge_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/bltu_EXEin" type="logic">
+      <obj_property name="ElementShortName">bltu_EXEin</obj_property>
+      <obj_property name="ObjectShortName">bltu_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/ld_EXEin" type="logic">
+      <obj_property name="ElementShortName">ld_EXEin</obj_property>
+      <obj_property name="ObjectShortName">ld_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/st_EXEin" type="logic">
+      <obj_property name="ElementShortName">st_EXEin</obj_property>
+      <obj_property name="ObjectShortName">st_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/we_EXEin" type="logic">
+      <obj_property name="ElementShortName">we_EXEin</obj_property>
+      <obj_property name="ObjectShortName">we_EXEin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/pc_EXEin" type="array">
+      <obj_property name="ElementShortName">pc_EXEin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_EXEin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rs1_data_EXEin" type="array">
+      <obj_property name="ElementShortName">rs1_data_EXEin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data_EXEin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rs2_data_EXEin" type="array">
+      <obj_property name="ElementShortName">rs2_data_EXEin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data_EXEin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/imm_EXEin" type="array">
+      <obj_property name="ElementShortName">imm_EXEin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_EXEin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/pc_prediction_EXEin" type="array">
+      <obj_property name="ElementShortName">pc_prediction_EXEin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_prediction_EXEin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/opcode_EXEin" type="array">
+      <obj_property name="ElementShortName">opcode_EXEin[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode_EXEin[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rd_EXEout" type="array">
+      <obj_property name="ElementShortName">rd_EXEout[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_EXEout[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/mem_size_EXEout" type="array">
+      <obj_property name="ElementShortName">mem_size_EXEout[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_size_EXEout[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/pc_EXEout" type="array">
+      <obj_property name="ElementShortName">pc_EXEout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_EXEout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/branch_target_EXEout" type="array">
+      <obj_property name="ElementShortName">branch_target_EXEout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_target_EXEout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_result_EXEout" type="array">
+      <obj_property name="ElementShortName">alu_result_EXEout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result_EXEout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/store_data_EXEout" type="array">
+      <obj_property name="ElementShortName">store_data_EXEout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data_EXEout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/DATA_DISPLAY" type="array">
+      <obj_property name="ElementShortName">DATA_DISPLAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_DISPLAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/PC_DISPLAY" type="array">
+      <obj_property name="ElementShortName">PC_DISPLAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_DISPLAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/imm_EXE" type="array">
+      <obj_property name="ElementShortName">imm_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/pc_EXE" type="array">
+      <obj_property name="ElementShortName">pc_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rs1_data_EXE" type="array">
+      <obj_property name="ElementShortName">rs1_data_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rs2_data_EXE" type="array">
+      <obj_property name="ElementShortName">rs2_data_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/pc_prediction_EXE" type="array">
+      <obj_property name="ElementShortName">pc_prediction_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_prediction_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/branch_taken_EXE" type="logic">
+      <obj_property name="ElementShortName">branch_taken_EXE</obj_property>
+      <obj_property name="ObjectShortName">branch_taken_EXE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/branch_target_EXE" type="array">
+      <obj_property name="ElementShortName">branch_target_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_target_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_result_EXE" type="array">
+      <obj_property name="ElementShortName">alu_result_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/complement_subtraction_result_EXE" type="array">
+      <obj_property name="ElementShortName">complement_subtraction_result_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">complement_subtraction_result_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/is_flush_EXE" type="logic">
+      <obj_property name="ElementShortName">is_flush_EXE</obj_property>
+      <obj_property name="ObjectShortName">is_flush_EXE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_operating_EXE" type="logic">
+      <obj_property name="ElementShortName">alu_operating_EXE</obj_property>
+      <obj_property name="ObjectShortName">alu_operating_EXE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/is_branch_ins" type="logic">
+      <obj_property name="ElementShortName">is_branch_ins</obj_property>
+      <obj_property name="ObjectShortName">is_branch_ins</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/alu_input_b" type="array">
+      <obj_property name="ElementShortName">alu_input_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_input_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/rs2_data_complement_EXE" type="array">
+      <obj_property name="ElementShortName">rs2_data_complement_EXE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data_complement_EXE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/result_MULTIPLIERout" type="array">
+      <obj_property name="ElementShortName">result_MULTIPLIERout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_MULTIPLIERout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/quotient_SIGNEDDIVIDERout" type="array">
+      <obj_property name="ElementShortName">quotient_SIGNEDDIVIDERout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient_SIGNEDDIVIDERout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/done_signal_MULTIPLIERout" type="logic">
+      <obj_property name="ElementShortName">done_signal_MULTIPLIERout</obj_property>
+      <obj_property name="ObjectShortName">done_signal_MULTIPLIERout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/EXE/done_signal_SIGNEDDIVIDERout" type="logic">
+      <obj_property name="ElementShortName">done_signal_SIGNEDDIVIDERout</obj_property>
+      <obj_property name="ObjectShortName">done_signal_SIGNEDDIVIDERout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/ID/SIGN_EXT_BRANCH/offset" type="array">
+      <obj_property name="ElementShortName">offset[12:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simcpu/top/ID/SIGN_EXT_BRANCH/sign_extend_offset" type="array">
+      <obj_property name="ElementShortName">sign_extend_offset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sign_extend_offset[31:0]</obj_property>
+   </wvobject>
+</wave_config>

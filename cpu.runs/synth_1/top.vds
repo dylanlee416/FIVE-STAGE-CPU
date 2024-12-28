@@ -1,0 +1,703 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 23 17:28:09 2024
+# Process ID: 15836
+# Current directory: E:/CA_design/cpu/cpu.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/CA_design/cpu/cpu.runs/synth_1/top.vds
+# Journal file: E:/CA_design/cpu/cpu.runs/synth_1\vivado.jou
+# Running On: Dylan, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16840 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 486.281 ; gain = 183.039
+Command: read_checkpoint -auto_incremental -incremental E:/CA_design/cpu/cpu.srcs/utils_1/imports/synth_1/cpu.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/CA_design/cpu/cpu.srcs/utils_1/imports/synth_1/cpu.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14616
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1320.320 ; gain = 440.125
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9400] empty statement in sequential block [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:28]
+WARNING: [Synth 8-9400] empty statement in sequential block [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:29]
+WARNING: [Synth 8-6901] identifier 'alu_result_EXE' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:27]
+WARNING: [Synth 8-6901] identifier 'alu_result_EXE' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:28]
+WARNING: [Synth 8-6901] identifier 'alu_result_EXE' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:29]
+WARNING: [Synth 8-6901] identifier 'complement_subtraction_result_EXE' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:30]
+WARNING: [Synth 8-6901] identifier 'complement_subtraction_result_EXE' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:31]
+WARNING: [Synth 8-6901] identifier 'result_MULTIPLIERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:49]
+WARNING: [Synth 8-6901] identifier 'quotient_SIGNEDDIVIDERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:50]
+WARNING: [Synth 8-6901] identifier 'is_branch_ins' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:54]
+WARNING: [Synth 8-6901] identifier 'result_MULTIPLIERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:56]
+WARNING: [Synth 8-6901] identifier 'quotient_SIGNEDDIVIDERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:57]
+WARNING: [Synth 8-6901] identifier 'done_signal_MULTIPLIERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:64]
+WARNING: [Synth 8-6901] identifier 'done_signal_SIGNEDDIVIDERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:65]
+WARNING: [Synth 8-6901] identifier 'done_signal_MULTIPLIERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:67]
+WARNING: [Synth 8-6901] identifier 'done_signal_SIGNEDDIVIDERout' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:68]
+WARNING: [Synth 8-6901] identifier 'data_WB' is used before its declaration [E:/CA_design/cpu/cpu.srcs/sources_1/new/write_back_stage.v:17]
+INFO: [Synth 8-11241] undeclared symbol 'pc_EXEout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:95]
+INFO: [Synth 8-11241] undeclared symbol 'ld_EXEout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:128]
+INFO: [Synth 8-11241] undeclared symbol 'rd_EXEout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:129]
+INFO: [Synth 8-11241] undeclared symbol 'we_WBout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:168]
+INFO: [Synth 8-11241] undeclared symbol 'ld_MEMout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:186]
+INFO: [Synth 8-11241] undeclared symbol 'we_MEMout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:187]
+INFO: [Synth 8-11241] undeclared symbol 'rd_MEMout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:188]
+INFO: [Synth 8-11241] undeclared symbol 'alu_result_MEMout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:190]
+INFO: [Synth 8-11241] undeclared symbol 'we_EXEout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:192]
+INFO: [Synth 8-11241] undeclared symbol 'alu_result_EXEout', assumed default net type 'wire' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:194]
+WARNING: [Synth 8-8895] 'rd_EXEout' is already implicitly declared on line 129 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:203]
+WARNING: [Synth 8-8895] 'alu_result_EXEout' is already implicitly declared on line 194 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:205]
+WARNING: [Synth 8-8895] 'pc_EXEout' is already implicitly declared on line 95 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:205]
+WARNING: [Synth 8-8895] 'ld_EXEout' is already implicitly declared on line 128 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:206]
+WARNING: [Synth 8-8895] 'we_EXEout' is already implicitly declared on line 192 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:206]
+WARNING: [Synth 8-8895] 'rd_MEMout' is already implicitly declared on line 188 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:253]
+WARNING: [Synth 8-8895] 'alu_result_MEMout' is already implicitly declared on line 190 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:255]
+WARNING: [Synth 8-8895] 'ld_MEMout' is already implicitly declared on line 186 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:256]
+WARNING: [Synth 8-8895] 'we_MEMout' is already implicitly declared on line 187 [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:256]
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'pc' [E:/CA_design/cpu/cpu.srcs/sources_1/new/pc.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/pc.v:4]
+INFO: [Synth 8-6157] synthesizing module 'insMem' [E:/CA_design/cpu/cpu.srcs/sources_1/new/insMem.v:4]
+INFO: [Synth 8-3876] $readmem data file './ins_file.dat' is read successfully [E:/CA_design/cpu/cpu.srcs/sources_1/new/insMem.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'insMem' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/insMem.v:4]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_predictor' [E:/CA_design/cpu/cpu.srcs/sources_1/new/two_bit_predictor.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_predictor' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/two_bit_predictor.v:4]
+INFO: [Synth 8-6157] synthesizing module 'decoder_stage' [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend_imm' [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend_imm.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend_imm' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend_imm.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'imm' does not match port width (12) of module 'sign_extend_imm' [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:54]
+WARNING: [Synth 8-689] width (32) of port connection 'imm' does not match port width (12) of module 'sign_extend_imm' [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'imm' does not match port width (12) of module 'sign_extend_imm' [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:64]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend_offset' [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend_offset.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend_offset' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend_offset.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'offset' does not match port width (13) of module 'sign_extend_offset' [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_stage' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/decoder_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'hazard_judge' [E:/CA_design/cpu/cpu.srcs/sources_1/new/hazard_judge.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_judge' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/hazard_judge.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cu' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:78]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'regbank' [E:/CA_design/cpu/cpu.srcs/sources_1/new/regbank.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'regbank' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/regbank.v:4]
+INFO: [Synth 8-6157] synthesizing module 'data_foward' [E:/CA_design/cpu/cpu.srcs/sources_1/new/data_foward.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'data_foward' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/data_foward.v:4]
+INFO: [Synth 8-6157] synthesizing module 'execute_stage' [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux' [E:/CA_design/cpu/cpu.srcs/sources_1/new/mux.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/mux.v:4]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/CA_design/cpu/cpu.srcs/sources_1/new/alu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/alu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'complement' [E:/CA_design/cpu/cpu.srcs/sources_1/new/complement.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'complement' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/complement.v:4]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [E:/CA_design/cpu/cpu.srcs/sources_1/new/multiplier.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/multiplier.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SignedDivider' [E:/CA_design/cpu/cpu.srcs/sources_1/new/signed_divider.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'SignedDivider' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/signed_divider.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'execute_stage' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mem_stage' [E:/CA_design/cpu/cpu.srcs/sources_1/new/mem_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mem_stage' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/mem_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [E:/CA_design/cpu/cpu.srcs/sources_1/new/dataMem.v:4]
+INFO: [Synth 8-3876] $readmem data file './data_file.dat' is read successfully [E:/CA_design/cpu/cpu.srcs/sources_1/new/dataMem.v:16]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend' [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/sign_extend.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/dataMem.v:4]
+INFO: [Synth 8-6157] synthesizing module 'write_back_stage' [E:/CA_design/cpu/cpu.srcs/sources_1/new/write_back_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'write_back_stage' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/write_back_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [E:/CA_design/cpu/cpu.srcs/sources_1/new/top.v:5]
+WARNING: [Synth 8-6014] Unused sequential element alu_operating_EXEout_reg was removed.  [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:67]
+WARNING: [Synth 8-6014] Unused sequential element flush_pipeline_EXEout_reg was removed.  [E:/CA_design/cpu/cpu.srcs/sources_1/new/execute_stage.v:73]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port clk in module data_foward is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[24] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[23] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[22] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[21] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[20] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[19] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[18] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[17] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[16] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[15] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[11] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[10] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[9] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[8] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_CUin[7] in module cu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[31] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[30] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[29] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[28] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[27] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[26] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[25] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[24] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[23] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[22] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[21] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[20] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[19] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[18] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[17] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[16] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[15] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[14] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[13] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[12] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[11] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[10] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[9] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[8] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[1] in module two_bit_predictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc_branch_TBSCin[0] in module two_bit_predictor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1452.820 ; gain = 572.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1452.820 ; gain = 572.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1452.820 ; gain = 572.625
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1452.820 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_raw'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_raw'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_0[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g_1[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_100M'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_100M'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[15]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[14]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[13]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[12]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[11]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[10]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[9]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[8]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[7]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[6]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[5]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[4]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[3]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[2]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[1]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_pin[0]'. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/CA_design/cpu/cpu.srcs/constrs_1/new/EGo1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1512.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1512.922 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'beq_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'bne_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'blt_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'bge_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'bltu_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'st_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_sel_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_sel_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_size_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_CUout_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/cu.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'data_RAM_reg' [E:/CA_design/cpu/cpu.srcs/sources_1/new/dataMem.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'ID/SIGN_EXT_IMM' (sign_extend_imm) to 'ID/SIGN_EXT_LOAD'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 11    
+	   3 Input   32 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 20    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 64    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
+	              128 Bit	(64 X 2 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input  512 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 36    
+	   3 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 20    
+	   4 Input    8 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 216   
+	   3 Input    8 Bit        Muxes := 26    
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 20    
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 20    
+	   5 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'temp_quotient_reg' and it is trimmed from '32' to '31' bits. [E:/CA_design/cpu/cpu.srcs/sources_1/new/signed_divider.v:43]
+WARNING: [Synth 8-7129] Port address_RAMin[31] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[30] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[29] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[28] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[27] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[26] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[25] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[24] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[23] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[22] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[21] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[20] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[19] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[18] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[17] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[16] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[15] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[14] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[13] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[12] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[11] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[10] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[9] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[8] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[7] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_RAMin[6] in module dataMem is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (REGS/rs1_data_REGSout0) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|insMem      | rom                 | 128x8         | LUT            | 
+|insMem      | rom                 | 128x8         | LUT            | 
+|insMem      | rom                 | 128x8         | LUT            | 
+|insMem      | rom                 | 128x8         | LUT            | 
+|top         | p_0_out             | 128x8         | LUT            | 
+|top         | p_0_out             | 128x8         | LUT            | 
+|top         | p_0_out             | 128x8         | LUT            | 
+|top         | PC/pc_IFout_reg_rep | 128x8         | Block RAM      | 
++------------+---------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                         | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------------------------+-----------+----------------------+---------------+
+|top         | TWO_BIT_PREDICTOR/state_table_reg  | Implied   | 64 x 2               | RAM64X1D x 2  | 
+|top         | TWO_BIT_PREDICTOR/target_table_reg | Implied   | 64 x 32              | RAM64M x 11   | 
+|top         | REGS/regs_reg                      | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1512.922 ; gain = 632.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                         | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------------------------+-----------+----------------------+---------------+
+|top         | TWO_BIT_PREDICTOR/state_table_reg  | Implied   | 64 x 2               | RAM64X1D x 2  | 
+|top         | TWO_BIT_PREDICTOR/target_table_reg | Implied   | 64 x 32              | RAM64M x 11   | 
+|top         | REGS/regs_reg                      | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1541.672 ; gain = 661.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1558.324 ; gain = 678.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1558.324 ; gain = 678.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1558.324 ; gain = 678.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 1558.324 ; gain = 678.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.434 ; gain = 678.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.434 ; gain = 678.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   147|
+|3     |LUT1     |   167|
+|4     |LUT2     |   136|
+|5     |LUT3     |   483|
+|6     |LUT4     |   237|
+|7     |LUT5     |   632|
+|8     |LUT6     |  2899|
+|9     |MUXF7    |   232|
+|10    |MUXF8    |    82|
+|11    |RAM32M   |    10|
+|12    |RAM32X1D |     4|
+|13    |RAM64M   |    11|
+|14    |RAM64X1D |     2|
+|15    |RAMB18E1 |     1|
+|16    |FDRE     |  1250|
+|17    |FDSE     |    83|
+|18    |LD       |    54|
+|19    |IBUF     |     2|
+|20    |OBUF     |    64|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.434 ; gain = 678.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:25 . Memory (MB): peak = 1558.434 ; gain = 618.137
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.434 ; gain = 678.238
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1568.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 543 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1573.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  LD => LDCE: 54 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 11 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+Synth Design complete | Checksum: bd591c6a
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 180 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 1573.141 ; gain = 1083.906
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1573.141 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/CA_design/cpu/cpu.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 17:30:02 2024...
